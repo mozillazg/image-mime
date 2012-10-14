@@ -1,7 +1,7 @@
 
-根据图片内容(UTF-8 编码)判断图片 MIME 类型
+# 根据图片内容判断 MIME 类型
 
-支持判断如下类型：
+## 支持如下 MIME 类型：
 
 * image/gif
 * image/jpeg
@@ -10,4 +10,11 @@
 * image/bmp
 * image/x-icon
 * application/octet-stream
+
+## 示例
+
+    >>> with open('test', 'rb') as f:
+    ...     print get_image_mime(f.read())
+    ...
+    image/png
 
